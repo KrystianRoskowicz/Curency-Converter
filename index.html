@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Walut</title>
+    <link rel="icon" href="images/Ikonka.jpg">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body element">
+
+    <div class="container">
+        <form class="js-form  form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                    Kalkulator Walut
+                </legend>
+                <p>
+                    <label>
+                        <span class="form__labelText">
+                            Kwota w PLN
+                        </span>
+                        <input class="js-amount form__field" type="number" min="1" required step="any">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <span class="form__labelText">
+                            Przelicz na:</span>
+                        <select type="number" name="crypto" class="js-convert form__field" step="any" list="crypto">
+                            <option value="EUR">EUR - Euro (4.70)</option>
+                            <option value="BGN">BGN - Lew Bułgarski (2.40)</option>
+                            <option value="USD">USD - Dolar Amerykański (4.33)</option>
+                        </select>
+                    </label>
+                </p>
+            </fieldset>
+            <p type="number" class="js-result" step="any"> Wynik </p>
+            <button class="form__button">Policz</button>
+        </form>
+    </div>
+</body>
+
+</html>
